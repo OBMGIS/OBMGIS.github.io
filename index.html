@@ -53,9 +53,7 @@
 							<h2>Welcome</h2>
 							<p>Let me take you through my work<br />
 							</p>
-							<ul class="actions">
-								<li><a href="#" class="button special">Activate</a></li>
-							</ul>
+
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
@@ -70,14 +68,6 @@
 								    GIS: ArcMap / ArcGIS Online / ArcGIS Business Analyst   <br />
 								    Remote Sensing:ENVI / Erdas				<br /> </h2>
 										<h2>
-
-
-							<section id="banner">
-								<div class="inner">
-								</div>
-								<a href="#mapid" class="more scrolly">Work Experience</a>
-							</section>
-
 							<ul class="icons major">
 								<li><i class="fab fa-python fa-2x"></i></li>
 								<li><i class="fas fa-code fa-2x"></i></li>
@@ -87,9 +77,20 @@
 						</div>
 						</header>
 					</section>
+					<section id="banner">
+						<div class="inner">
+							<h3>My Profesional Experience has taken me around the globe</h3>
+
+							<ul class="actions">
+								<li><a href="#mapid" class="button special">Let's Visualize It Below</a></li>
+							</ul>
+						</div>
+
+					</section>
+
 		<!-- Two -->
 <section
-<div id="mapid" style="width: 1349px; height: 400px;"></div>
+<div id="mapid" style="width: 1262px; height: 400px;"></div>
 <script>
 
 var mymap = L.map('mapid').setView([32.27,-28.65],3);
@@ -102,10 +103,8 @@ attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</
 id: 'mapbox.streets'
 }).addTo(mymap);
 
-L.marker([39.96528, 4.163818]).addTo(mymap)
-.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
 
-L.marker([51.5, -0.09]).addTo(mymap)
+L.marker([39.964912, 4.119764]).addTo(mymap)
 .bindPopup("<b>Hello world!</b><br />GIS Field Technican.").openPopup();
 
 
@@ -145,6 +144,12 @@ popup
 
 mymap.on('click', onMapClick);
 
+
+$(window).on("resize", function() {
+    $("#map").height($(window).height()).width($(window).width());
+    map.invalidateSize();
+}).trigger("resize");
+
 </script>
 </section>
 						</section>
@@ -162,6 +167,12 @@ mymap.on('click', onMapClick);
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
 							</div>
 						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Tortor dolore feugiat<br />
+								elementum magna</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
 					</section>
 
 				<!-- Three -->
