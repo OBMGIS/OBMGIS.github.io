@@ -6,7 +6,7 @@
 -->
 <!-- TO DO LIST:
 	 - Add icon para apple job
-	 - 	que todos los icons tengan el lugar de trabajo maybe? 
+	 - 	que todos los icons tengan el lugar de trabajo maybe?
 	 - mira lista en google drive
 
 				-->
@@ -62,7 +62,7 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>Welcome</h2>
-							<p>I'm Orlando, a GIS/Remote Sensing specialist, web development enthusiast, and Part time Archaeologist.<br />
+							<p>I'm Orlando, a GIS & Remote Sensing specialist, web development enthusiast, and Part-Time Archaeologist.<br />
 							</p>
 
 						</div>
@@ -74,10 +74,12 @@
 						<div class="inner">
 							<header class="major">
 								<h2>My Tech Skills Cover a wide range of<br />
-								Programing Languages and GIS/Remote Sensing Software:</h2>
+								Programing Languages and GIS/Remote Software:</h2>
 								<h2>Programing: Python / R /  SQL / HTML5 / CSS / Javascript <br />
-								    GIS: ArcMap / Quantum GIS / AutoCAD   <br />
-								    Remote Sensing: ENVI / Erdas				<br /> </h2>
+										Mapping Libraries: Leaflet / Mapbox / ArcGIS API		<br />
+										GIS: ArcMap / Quantum GIS / AutoCAD   <br />
+										Remote Sensing: ENVI / Erdas				<br />
+																																																						</h2>
 										<h2>
 							<ul class="icons major">
 								<li><i class="fab fa-python fa-2x"></i></li>
@@ -140,9 +142,6 @@ L.marker([30.269742, -97.740555]).addTo(mymap)
 .bindPopup("<b>Hello world!</b><br />GIS Technician").openPopup();
 
 
-
-
-
 var popup = L.popup();
 
 function onMapClick(e) {
@@ -153,8 +152,6 @@ popup
 }
 
 mymap.on('click', onMapClick);
-
-
 $(window).on("resize", function() {
     $("#map").height($(window).height()).width($(window).width());
     map.invalidateSize();
